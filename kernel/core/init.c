@@ -157,11 +157,7 @@ int __init kernelsu_init(void)
 {
     pr_info("Initialized on: %s (%s) with driver version: %u\n", UTS_RELEASE, UTS_MACHINE, KSU_VERSION);
 
-#ifdef MODULE
-    ksu_late_loaded = (current->pid != 1);
-#else
-    ksu_late_loaded = false;
-#endif
+
 
     // If we are in tracepoint hook, remember to check x86-64 compatible
 #if defined(CONFIG_KSU_TRACEPOINT_HOOK) && defined(__x86_64__)
