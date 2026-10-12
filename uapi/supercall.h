@@ -15,7 +15,7 @@
 #define KSU_FULL_VERSION_STRING 255
 
 // 2: allowlist v4 root profile flags
-static const __u32 KERNEL_SU_UAPI_VERSION = 2;
+static const __u32 KERNEL_SU_UAPI_VERSION = 114514;
 
 /* Magic numbers for reboot hook to install fd */
 DEFINE_KSU_UAPI_CONST(__u32, KSU_INSTALL_MAGIC1, 0xDEADBEEF)
